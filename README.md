@@ -32,3 +32,8 @@ JDK1.8, Maven 3.3.9, IntelliJ IDEA, Navicat Premium, Git
 
 ## **讨论**
 有问题请在[issue](https://github.com/gdufeZLYL/springboot-squirrel/issues)讨论
+
+## **网站相关地址**
+商品首页：http://localhost:8081/goods/homeGoods
+后台管理：http://localhost:8081/manage/login
+注意：进入后台管理前，需要先登录商品页面，最好是登录管理员账号（power=90）
