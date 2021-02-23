@@ -14,26 +14,30 @@ public class CatelogServiceImpl implements CatelogService {
     @Resource
     private CatelogMapper catelogMapper;
 
+    @Override
     public int getCount(Catelog catelog) {
         int count = catelogMapper.getCount(catelog);
         return count;
     }
 
+    @Override
     public List<Catelog> getAllCatelog() {
-        List<Catelog> catelogs = catelogMapper.getAllCatelog();
-        return catelogs;
+        return catelogMapper.getAllCatelog();
     }
 
+    @Override
     public Catelog selectByPrimaryKey(Integer id){
         Catelog catelog = catelogMapper.selectByPrimaryKey(id);
         return catelog;
     }
 
+    @Override
     public int updateByPrimaryKey(Catelog catelog) {
         return  catelogMapper.updateByPrimaryKey(catelog);
     }
 
-    public int updateCatelogNum(Integer id,Integer number) {
+    @Override
+    public int updateCatelogNum(Integer id, Integer number) {
         return catelogMapper.updateCatelogNum(id,number);
     }
 }
